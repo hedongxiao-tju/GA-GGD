@@ -1,0 +1,15 @@
+dataset="CiteSeer"
+datadir="./datasets/"
+log_dir="./log/logCiteSeer.txt"
+lr=(0.0001)
+wd=(0.0)
+drop_prob=(0.2)
+hid_units=(1024)
+patience=(500)
+nb_epochs=(500)
+num_hop=(1)
+n_trials=(4)
+GPU_ID=(0)
+iteration=(5)
+
+python GA-GGD.py --dataset $dataset  --log_dir $log_dir --datadir $datadir --lr $lr  --wd $wd   --drop_prob $drop_prob   --hid_units $hid_units   --patience $patience   --nb_epochs $nb_epochs   --num_hop $num_hop   --n_trials $n_trials   --GPU_ID $GPU_ID   --iteration $iteration

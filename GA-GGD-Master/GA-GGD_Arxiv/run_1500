@@ -1,0 +1,9 @@
+ggd_lr=(0.0001)
+ggd_epochs=(1)
+drop_feat=(0.1)
+n_hidden=(1500)
+
+
+python GANGGD_arxiv.py --n_trails 1 --ggd-lr $ggd_lr --num_epochs $ggd_epochs  --drop_feat $drop_feat --n-hidden $n_hidden --data_root_dir ./datasets
+
+
